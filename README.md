@@ -9,6 +9,26 @@ Este guia mostra como configurar um produtor e um consumidor de mensagens Rabbit
 - [Spring Boot](https://spring.io/projects/spring-boot) configurado no seu ambiente de desenvolvimento.
 - Um servidor RabbitMQ configurado e em execução (você pode usar uma instância local ou um serviço em nuvem).
 
+# Passos para Configurar um Fluxo de Mensageria com CloudAMQP
+
+A seguir, descrevemos os passos necessários para configurar um fluxo de mensageria com RabbitMQ usando o serviço CloudAMQP.
+
+## 1. Criar uma Conta no CloudAMQP
+
+- Acesse o site do [CloudAMQP](https://www.cloudamqp.com/).
+- Crie uma conta se ainda não tiver uma ou faça login.
+
+## 2. Criar uma Instância do RabbitMQ
+
+- Após fazer login no CloudAMQP, clique em "Create instance" para criar uma nova instância do RabbitMQ.
+- Escolha um plano (grátis ou pago) e configure os detalhes da instância, como nome, região, etc.
+- Clique em "Create" para criar a instância.
+
+## 3. Configure a Instância
+
+- Após a criação da instância, você verá informações importantes, como a URL de conexão, nome de usuário e senha. Anote essas informações, pois você precisará delas para conectar seu aplicativo ao RabbitMQ hospedado na nuvem.
+
+
 ## Configurando o Spring Boot
 
 1. Adicione as dependências necessárias ao seu arquivo `pom.xml` (Maven) ou `build.gradle` (Gradle) para o Spring Boot e RabbitMQ. Substitua as dependências Spring Boot Starter AMQP e Spring Boot Starter Web:
