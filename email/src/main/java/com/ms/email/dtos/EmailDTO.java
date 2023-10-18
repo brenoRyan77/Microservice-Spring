@@ -1,4 +1,9 @@
 package com.ms.email.dtos;
 
-public record EmailDTO(String name, String email) {
+import java.util.UUID;
+
+public record EmailDTO(String name,
+                       String emailTo,
+                       String subject,
+                       UUID userId) {
 }
